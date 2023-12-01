@@ -16,7 +16,7 @@ public class CorsConfig {
         System.out.println("Inside corsconfigsource");
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowCredentials(true);
-        configuration.setAllowedOrigins(List.of("http://localhost:4200/"));
+        configuration.setAllowedOrigins(List.of("http://localhost:4200", "https://vatana-dhanish.netlify.app"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowedMethods(List.of("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
